@@ -9,20 +9,20 @@ def main():
     except IOError as erro:
         print("Erro na leitura %s" % erro)
 
-    dados[][]
-    dados_l = []
-    dados_c = []
-    classe =[]
-    j=0
+    dados = []
+    classe = []
+    line = []
+    j = 0
 
-    for linha in range(150):
-        for coluna in range(4):
-            dados_l.append(linha)
-            dados_c.append(coluna)
-        dados[dados_l][dados_c]  
+    for line in file:
+        dados_str = []
+        dados_str.append(line.strip('\n').split(','))
+        line = []
+        for j in range(len(dados_str)):
+            line.append(dados_str[j])
 
-    print(dados)
-
+        dados.append(line)
+        classe.append(dados_str[len(dados_str) - 1])
     file.close()
     print(classe)
     #passo 2 altera valores classe
