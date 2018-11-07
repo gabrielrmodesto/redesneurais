@@ -24,11 +24,14 @@ def main():
         dados.append(line)
         classe.append(dados_str[len(dados_str) - 1])
     file.close()
-    print(classe)
-    #passo 2 altera valores classe
-    for i in range(1,151):
-        if classe != 1:
-            classe[i] = -1
 
     print(classe)
+    #passo 2 altera valores classe
+    # for i in range(1,151):
+    #     if classe != 1:
+    #         classe[i] = -1
+
+    # print(classe)
         
+if __name__ == '__main__':
+    main()
